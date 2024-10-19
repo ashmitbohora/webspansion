@@ -1604,11 +1604,12 @@ footer{
         background-image: none;
     }
 
+    header{
+        background-color: white;
+    }
 
     .navMobile{
-        display: block;
-
-        
+        display: block;        
         position: fixed;
         right: 0;
         top: 0;
@@ -1635,7 +1636,7 @@ footer{
     }
 
     .navImage{
-        width: 100px;
+        width: 130px;
     }
 
 
@@ -1711,7 +1712,7 @@ footer{
         align-items: center; 
         justify-content: center;
 
-        width: clamp(220px,50vw,50vw);;
+        width: fit-content;
         margin: 0 auto;
         height: clamp(50px, 7vw, 7vw);
         padding: 2% 3%;
@@ -1727,16 +1728,32 @@ footer{
         color: white;
     
         font-family: "Inter", sans-serif;
-        margin-bottom: 10px;
+
         font-size: clamp(1rem,3vw,3vw);
         border-radius: 10px;
     
         position: relative;
     }
 
+    .page-1-mobile .button1{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .button1 span{
+        font-size: 2rem;
+        margin-right: 5px;
+        margin-top: -2px;
+    }
+
+    .button2 span{
+        margin-right: 5px;  
+    }
+
     .mobileMainImage{
-        width: 50vw;
+        width: 40vw;
         filter: drop-shadow(5px 10px 10px rgba(0, 0, 0, 0.5));
+        margin-top: 50px;
 
     }
 
@@ -1748,6 +1765,8 @@ footer{
         text-align: center;
 
         width: 100%;
+
+        gap: 10px;
 
     }
     
@@ -1777,8 +1796,7 @@ footer{
         font-size: clamp(1rem,3vw,3vw);
         
         width: 85%;
-        margin: 15px auto;
-        
+        margin: 0 auto;        
 
     }
 
@@ -1967,6 +1985,16 @@ footer{
     .page-2-more{
         gap: 50px;
     }
+
+
+    .page-1-mobile button{
+        scale: 0.9;
+    }
+    .page-1-mobile .button1{
+        margin-bottom: ;
+    }
+
+
 
 
     .trackerCircle{
