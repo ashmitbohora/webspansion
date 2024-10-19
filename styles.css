@@ -103,6 +103,11 @@ body{
 
     position: relative;
 
+
+    background-size: 20px 20px;
+    background-image:
+      linear-gradient(to right, rgba(0, 0, 0, 0.05) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(0, 0, 0, 0.05) 1px, transparent 1px);
 }
 
 header{
@@ -207,7 +212,6 @@ header{
 .navHidden{
     display: none;
 }
-
 .navBars{
     display: none;
 }
@@ -246,6 +250,8 @@ header{
 .mainImage{
     width: 40%;
     max-width: 500px;
+
+    filter: drop-shadow(5px 10px 10px rgba(0, 0, 0, 0.5));
 }
 .page-1-right{
     display: flex;
@@ -303,7 +309,6 @@ header{
     border-radius: 10px;
 
     position: relative;
-
 }
 
 .imgBtn2{
@@ -338,6 +343,23 @@ header{
     transform: rotate(-15deg);
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+.page-1-mobile{
+    display: none;
+}
+
+
 
 
 
@@ -1411,10 +1433,7 @@ footer{
 }
 
 @media screen and (max-width: 1230px){
-    
-    .contactPage-left h2{
-        
-    }
+
 
 }
 
@@ -1629,42 +1648,97 @@ footer{
 
 
     .page-1{
+        display: none;
+    }
+
+
+
+    .page-1-mobile{
+        display: flex;
         flex-direction: column-reverse;
-        padding-top: 50px;
-    }
-    .page-1-headers h1{
-        font-size: 3.5rem;
-    }
-    .page-1-headers h1 br{
-        display: none;
+        align-items: center;
+        justify-content: center;
+
+        padding: 50px;
     }
 
-    .page-1-headers h3{
-        font-size: 2.8rem;
-    }
-    .mainImage{
-        width: 300px;
-    }
-    .page-1-right{
-        text-align: center;
-        scale: 1;
-    }
 
-    .arrowMain{
-        display: none;
-    }
-    .page-1-h3-span{
-        display: inline-block;
-        font-weight: 400;
+    .page-1-mobile button{
+        display: inline-flex;
+        flex-direction: row;
+        align-items: center; 
+        justify-content: center;
 
+        width: clamp(220px,50vw,50vw);;
+        margin: 0 auto;
+        padding: 2% 3%;
+        
+        box-shadow: 0px 4px 3px rgba(0,0,0,0.2);
+        text-shadow: 0px 4px 4px rgba(0,0,0,0.4);
+    
+
+
+        border: none;
+        outline: none;
+        background-color: #F96F0B;
+        color: white;
+    
         font-family: "Inter", sans-serif;
-
-        font-size: 2.3rem;
+        margin-bottom: 10px;
+        font-size: clamp(1rem,3vw,3vw);
+        border-radius: 10px;
+    
+        position: relative;
     }
 
-    .page-1-headers h6{
-        font-size: 1.2rem;
+    .mobileMainImage{
+        width: 50vw;
+        filter: drop-shadow(5px 10px 10px rgba(0, 0, 0, 0.5));
+
     }
+
+    .mobileMainText{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        text-align: center;
+
+        width: 100%;
+
+    }
+    
+    .mobileMainText h1{
+        color: var(--blue);
+        letter-spacing: 1.2px;
+
+        font-size: clamp(2rem,9.7vw,10vw);
+
+        font-weight: 500;
+
+    }
+
+    .mobileMainText h6{
+        color: var(--orange);
+        letter-spacing: 1.2px;
+        font-size: clamp(1.5rem,5.5vw,5.5vw);
+        font-weight: 200;
+
+
+    }
+
+    .mobileMainText p{
+        font-family: "Inter", sans-serif;
+        color: var(--blue);
+
+        font-size: clamp(1rem,3vw,3vw);
+        
+        width: 85%;
+        margin: 15px auto;
+        
+
+    }
+
 
 
 
@@ -1772,26 +1846,6 @@ footer{
 
 @media screen and (max-width: 650px){
 
-    .page-1-headers h1{
-        font-size: 3rem;
-    }
-
-    .page-1-headers h3{
-        font-size: 2rem;
-    }
-    .mainImage{
-        width: 250px;
-    }
-
-    .page-1-h3-span{
-        font-size: 2.3rem;
-    }
-
-    .page-1-headers h6{
-        font-size: 1.2rem;
-    }
-
-
     
     .learnMore-2, .learnMore-4 {
         gap: 0px;
@@ -1852,6 +1906,10 @@ footer{
 
 
 @media (max-width: 500px){
+
+    .page-1-mobile{
+        padding: 50px 5px;
+    }
 
     .page-2 div{
         font-size: 2rem;
