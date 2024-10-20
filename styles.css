@@ -180,11 +180,6 @@ header{
 }
 
 
-.imgBtn1{
-    width: 20px;
-    margin-top: 3px;
-
-}
 
 .buttonType1{
     display: flex;
@@ -244,7 +239,19 @@ header{
 }
 
 
+.clickIcon{
+    transform: rotateY(180deg);
+    fill: white;
 
+    filter:drop-shadow(0px 4px 4px rgba(0,0,0,0.4));
+
+    scale: 0.9;
+}
+
+
+.clickIconBig{
+    scale: 1;
+}
 
 
 
@@ -338,9 +345,6 @@ header{
     position: relative;
 }
 
-.imgBtn2{
-    margin-top: 3%;
-}
 
 
 
@@ -541,6 +545,7 @@ header{
 }
 
 .textLeft button{
+    margin-top: 20px;
     width: fit-content;
 }
 
@@ -548,7 +553,6 @@ header{
 .textLeft h4{
     font-size: 2.4rem;
     letter-spacing: 1.3px;
-    margin-bottom: 20px;
     font-weight: 500;
 }
 
@@ -577,7 +581,7 @@ header{
 
 
 .learnMore-2{
-    background-color: #FFA867;
+    background-color: #fabe91;
     margin-left: auto;
     width: 50%;
     border-top-left-radius: 10px;
@@ -663,10 +667,6 @@ header{
     width: 150px;
 }
 
-.learnMore-3 button{
-    margin-top: 10px;
-
-}
 
 
 .learnMore-4{
@@ -681,12 +681,6 @@ header{
 
     border-radius: 10px;
 }
-
-.learnMore-4 button{
-    margin-top: 10px;
-
-}
-
 
 
 
@@ -1033,7 +1027,7 @@ header{
     margin: 0 auto;
     text-align: center;
 
-    padding: 100px;
+    padding: 90px;
 
     font-size: 3rem;
 }
@@ -1058,14 +1052,24 @@ header{
     width: 350px;
 }
 
-.blog iframe{
+.blogSite{
     height: 300px;
-    width: 350px;
-    background-color: lightgray;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.blogSite h1{
+    letter-spacing: 1.2px;
+    color: white;
+    font-size: 3rem;
 }
 
 .blogBottom{
-    width: 350px;
+    width: 100%;
     background-color: white;
     padding: 20px;
     padding-bottom: 60px;
@@ -1079,6 +1083,8 @@ header{
     padding: 3px 15px;
 
     border-radius: 7px;
+
+    font-size: 1.3rem;
 }
 
 .page6AbsoluteImages{
@@ -1174,8 +1180,6 @@ header{
 
     letter-spacing: 2px;
 
-
-    width: 600px;
 }
 
 .contactPage-left h2{
@@ -1383,12 +1387,20 @@ footer{
     align-items: center;
 
     gap: 25px;
+
+
 }
 
 .footerLegal a{
     color: white;
     font-size: 1rem;
 }
+
+.footerLegal p{
+    border-bottom: 1px solid white;
+}
+
+
 
 
 
@@ -1626,7 +1638,8 @@ footer{
         align-items: center;
         justify-content: start;
 
-        padding-top: 100px;
+        padding-top: 200px;
+        margin-top: -100px;
 
 
         transition: all 1s;
@@ -1735,23 +1748,37 @@ footer{
         position: relative;
     }
 
+    .page-1-mobile .button2{
+        padding: 2% 5%;
+    }
+
     .page-1-mobile .button1{
         margin-top: 10px;
         margin-bottom: 10px;
+        
     }
 
     .button1 span{
         font-size: 2rem;
         margin-right: 5px;
-        margin-top: -2%;
 
-        color: white;
+        fill: white;
+        filter: drop-shadow(0px 4px 3px rgba(0,0,0,0.4));
 
     }
 
+    .button2{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
     .button2 span{
+        font-size: 2rem;
         margin-right: 5px;  
-        color: white;
+
+        fill: white;
+        filter: drop-shadow(0px 4px 3px rgba(0,0,0,0.4));
     }
 
     .mobileMainImage{
@@ -1787,7 +1814,7 @@ footer{
     .mobileMainText h6{
         color: var(--orange);
         letter-spacing: 1.2px;
-        font-size: clamp(1.2rem,5.5vw,5.5vw);
+        font-size: clamp(1.85rem,5.5vw,5.5vw);
         font-weight: 200;
 
 
@@ -1800,7 +1827,7 @@ footer{
         font-size: clamp(1rem,3vw,3vw);
         
         width: 85%;
-        margin: 0 auto;        
+        margin: 0 auto;       
 
     }
 
@@ -1855,18 +1882,16 @@ footer{
     }
     
     .contactPage-left img{
-        width: 25vw;
+        width: clamp(150px, 25vw, 25vw);
     }
 
     .contactPage-right{
-        width: 50vw;
-    }
-    .contactPage-right h3{
-        font-size: 4.5vw;
+        width: 70vw;
     }
 
+
     .contactInputs{
-        padding: 10px 15px;
+        padding: 20px 15px;
     }
     
     .contactInputs::placeholder{
@@ -1926,8 +1951,8 @@ footer{
 
 
     .trackerCircle{
-        width: 200px;
-        height: 200px;
+        width: 150px;
+        height: 150px;
     }
 
     .imgRight img{
@@ -1992,19 +2017,34 @@ footer{
 
 
     .page-1-mobile button{
-        scale: 0.9;
+        width: 230px;
+        padding: 25px 15px;
+        vertical-align: middle;
     }
-    .page-1-mobile .button1{
-        margin-bottom: ;
+
+
+    .mobileMainText h6{
+        font-size: clamp(2rem,5.5vw,5.5vw);
+        margin-top: -10px;
+        letter-spacing: 1.2px;
+
+        font-family: "Inter", sans-serif;
+        font-weight: 400;
+
+    }
+
+    .mobileMainText h6 span{
+        display: none;
+    }
+
+    .mobileMainText p{
+        line-height: 1.6;
+        width: 80%;
     }
 
 
 
 
-    .trackerCircle{
-        width: 130px;
-        height: 130px;
-    }
 
     .trackerCircle h5{
         font-size: 2.5rem;
@@ -2019,30 +2059,118 @@ footer{
     }
 
 
+    .learnMoreBlocks{
+        flex-direction: column;
+        gap: 40px;
+    }
 
+    .learnMoreBlocks .textLeft{
+        width: 90%;
+    }
+    .learnMoreBlocks .imgRight img{
+        width: 150px;
+    }
+
+    .learnMore-1 .imgRight img{
+        width: 200px;
+    }
+
+    .trackerCircle{
+        width: 200px;
+        height: 200px;
+        align-self: flex-start;
+    }
+    .trackerCircle h5{
+        font-size: 3rem;
+    }
+
+    .textLeft button{
+        margin-top: 0;
+    }
 
     .page-5-container h3{
         padding: 0px 50px;
         text-align: center;
         margin-bottom: 100px;
     }
-}
-
-
-@media (max-width: 375){
-
-    
 
 
 
-
-    
-    .blueEffectBlog {
-        bottom: -120px;
+    .page-6 h2{
+        padding: 50px;
+        font-size: clamp(1.8rem, 10vw, 12vw)
     }
+
+
+
+    .contactPage-left{
+        text-align: center;
+        padding: 10px;
+    }
+
+    .contactPage-left h2{
+        font-size: clamp(1.5rem, 4vw, 4vw);
+        font-size: 2rem;
+
+    }
+    .contactPage-left h3, .contactPage-left h3 span{
+        font-size: clamp(2rem, 4vw, 4vw);
+    }
+
+    .contactPage-right{
+        width: 85vw;
+    }
+
+    .contactPage-right h3{
+        font-size: clamp(1.5rem, 7vw, 8vw);
+        letter-spacing: 10%;
+    }
+
 }
 
-@media (max-width: 320) {
+
+@media (max-width: 375px){
+
+
+    .blogSite{
+        height: 250px;
+
+    }
+    .blogSite h1{
+        font-size: 2rem;
+    }
+    .blog{
+        width: 250px;
+    }
+
+
+    .mobileMainText h6{
+        font-size: 1.5rem;
+    }
+
+    
+
+    .contactPage-left{
+        text-align: center;
+        gap: 20px;
+    }
+
+
+    .footerBottom p{
+        font-size: 0.7rem;
+    }
+
+
+}
+
+@media (max-width: 320px) {
+    .footerBottom p{
+        font-size: 0.6rem;
+    }
+    .footerBottom p{
+        text-align: center;
+    }
+
 
 
 }

@@ -70,3 +70,23 @@ xIcon.addEventListener("click",() => {
     mobileNav.classList.toggle("navHidden")
 
 });
+
+
+
+
+
+// Prallax effect
+
+
+// let blogs = document.querySelectorAll(".blog");
+
+// window.addEventListener("scroll",() =>{
+
+//     let value = window.scrollY;
+
+//     blogs.forEach((blog) => {
+
+//         blog.style.transform = `translateY(${value * 0.16}px)`;
+//     });
+
+// });
