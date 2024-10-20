@@ -132,8 +132,8 @@ body{
 
     background-size: 20px 20px;
     background-image:
-      linear-gradient(to right, rgba(0, 0, 0, 0.05) 1px, transparent 1px),
-      linear-gradient(to bottom, rgba(0, 0, 0, 0.05) 1px, transparent 1px);
+      linear-gradient(to right, rgba(0, 0, 0, 0.03) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(0, 0, 0, 0.03) 1px, transparent 1px);
 }
 
 header{
@@ -170,14 +170,7 @@ header{
 
 
 
-.nav-right button{
-    font-size: 1.2rem;
-    border-radius: 7px;
-    
 
-
-    font-family: "Bebas Neue", sans-serif;
-}
 
 
 
@@ -202,24 +195,39 @@ header{
 
 }
 
+.nav-right button{
+    font-size: 1.2rem;
+    border-radius: 7px;
+    
+    font-family: "Bebas Neue", sans-serif;
+
+    padding: 7px 20px;
+
+    height: 40px;
+    width: 150px;
+
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.2);
+}
+
 
 .startBtn{
     font-size: 4rem;
+    gap: 5px;
+
+}
+
+.startBtn span{
+    fill: white;
+    margin-top: 5px;
 }
 
 
 .moreBtn{
     border: none;
     outline: none;
-    background-color: #fd7514;
+    background-color: #F96F0B;    
     color: white;
 
-    padding: 7px 20px;
-
-
-    text-shadow: 0px 4px 3px rgba(0,0,0,0.2);
-
-    
     font-family: "Bebas Neue", sans-serif;
 
 }
@@ -1767,15 +1775,10 @@ footer{
 
     }
 
-    .button2{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-    }
+
     .button2 span{
         font-size: 2rem;
-        margin-right: 5px;  
+        margin-right: 10px;  
 
         fill: white;
         filter: drop-shadow(0px 4px 3px rgba(0,0,0,0.4));
