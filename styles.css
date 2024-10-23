@@ -1822,7 +1822,7 @@ footer{
     }
     .fa-xmark{
         position: absolute;
-        top: 0;
+        top: 15%;
         right: 0;
         padding: 40px;
 
@@ -1904,6 +1904,14 @@ footer{
 
         fill: white;
         filter: drop-shadow(0px 4px 3px rgba(0,0,0,0.4));
+    }
+
+
+    .page-1-mobile button{
+        width: 300px;
+        padding: 25px 15px;
+        vertical-align: middle;
+        
     }
 
     .mobileMainImage{
@@ -2140,21 +2148,13 @@ footer{
     }
 
 
-    .page-1-mobile button{
-        width: 230px;
-        padding: 25px 15px;
-        vertical-align: middle;
-    }
+
 
 
     .mobileMainText h6{
-        font-size: clamp(2rem,5.5vw,5.5vw);
+        font-size: clamp(2.5rem,6vw,6vw);
         margin-top: -10px;
         letter-spacing: 1.2px;
-
-        font-family: "Inter", sans-serif;
-        font-weight: 400;
-
     }
 
     .mobileMainText h6 span{
@@ -2166,6 +2166,10 @@ footer{
         width: 80%;
     }
 
+
+    .page-1-mobile button{
+        width: clamp(230px,250px,250px);
+    }
 
 
 
