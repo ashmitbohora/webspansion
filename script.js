@@ -80,11 +80,38 @@ const shareBtn = document.querySelector('.shareButton')
 const socialBox = document.querySelector('.shareInfo')
 const closeShare = document.querySelector('.closeShare')
 
+
+
+
+
+
+
+
 shareBtn.addEventListener("click", () => {
 
-    socialBox.classList.toggle("shareActive");
+    if (navigator.share){
+        navigator.share({
+            title: 'Webspansion',
+            text: 'Check out Webspansion! They make free websites for small businesses, nonprofits, and anyone in need!',
+            url: 'https://getwebspansion.org'
+        })
+        .then(() => {
+            console.log("Successfully Shared");
+        })
+        .catch((error) => {
+            console.log("Error Sharing", error)
+
+        });
+    }
+
+
+    else {
+        socialBox.classList.toggle("shareActive");
+    }
 
 });
+
+
 
 closeShare.addEventListener("click", () => {
 
@@ -92,6 +119,3 @@ closeShare.addEventListener("click", () => {
 
 });
 
-
-
-console.log(closeShare);
