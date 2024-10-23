@@ -1396,6 +1396,10 @@ footer{
     
 }
 
+.footerImage{
+    width: 150px;
+}
+
 .footerHr{
     margin-bottom: 20px;
 
