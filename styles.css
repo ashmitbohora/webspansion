@@ -696,8 +696,87 @@ header{
 }
 
 
+.learnMore-4{
+    position: relative;
+}
 
 
+
+.shareInfo{
+    all: unset;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #5CA6FF;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    height: 90px;
+    width: 250px;
+    z-index: 5;
+    border-radius: 20px;
+
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    gap: 30px;
+
+    opacity: 0;
+
+    transition: all 0.2s;
+
+}
+
+
+.shareActive{
+    top: 90%;
+    opacity: 1;
+
+}
+
+.shareLinks{
+    width: fit-content;
+
+    text-shadow: none;
+    font-size: 1rem;
+    fill: white;
+    color: black;
+
+    font-size: 2rem;
+
+}
+
+
+.shareLinks i{
+    font-size: 1.5rem;
+}
+
+.shareLinks i::before{
+    color: black;
+    transition: all 0.2s;
+}
+
+.shareLinks a:hover i::before, .shareLinks a:active i::before {
+    color: white;
+}
+
+
+.closeShare{
+    position: absolute;
+    cursor: pointer;
+    color: white;
+
+    top: 3px;
+    right: 3px;
+    
+
+    text-shadow: none;
+
+    font-size: 0.8rem;
+
+    padding: 10px;
+}
 
 
 
@@ -1641,6 +1720,21 @@ footer{
     .learnMore-4 .textLeft{
         width: 60%;
     }
+
+    .shareInfo{
+        top: 0;
+        left: auto;
+    }
+
+    .shareActive{
+        top: 55%;
+
+        left: auto;
+        opacity: 1;
+    
+    }
+
+ 
 
 }
 

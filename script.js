@@ -74,19 +74,24 @@ xIcon.addEventListener("click",() => {
 
 
 
+// Share buttons
 
-// Prallax effect
+const shareBtn = document.querySelector('.shareButton')
+const socialBox = document.querySelector('.shareInfo')
+const closeShare = document.querySelector('.closeShare')
+
+shareBtn.addEventListener("click", () => {
+
+    socialBox.classList.toggle("shareActive");
+
+});
+
+closeShare.addEventListener("click", () => {
+
+    socialBox.classList.remove("shareActive");
+
+});
 
 
-// let blogs = document.querySelectorAll(".blog");
 
-// window.addEventListener("scroll",() =>{
-
-//     let value = window.scrollY;
-
-//     blogs.forEach((blog) => {
-
-//         blog.style.transform = `translateY(${value * 0.16}px)`;
-//     });
-
-// });
+console.log(closeShare);
