@@ -41,6 +41,8 @@ a {
 
     opacity: 0;
     transition: all 0.5s;
+
+    cursor: pointer;
 }
 
 .backToTopActive{
@@ -221,6 +223,8 @@ header{
 
     font-family: "Bebas Neue", sans-serif;
 
+    cursor: pointer;
+
 }
 
 .nav-right button{
@@ -247,6 +251,9 @@ header{
     font-size: 4rem;
     gap: 5px;
 
+
+
+    cursor: pointer;
 }
 
 .startBtn span{
@@ -263,6 +270,8 @@ header{
 
     font-family: "Bebas Neue", sans-serif;
 
+
+    cursor: pointer;
 }
 
 
@@ -384,6 +393,8 @@ header{
     border-radius: 10px;
 
     position: relative;
+
+    cursor: pointer;
 }
 
 
@@ -1352,6 +1363,8 @@ header{
     align-self: flex-start;
     width: 400px;
 
+
+
 }
 
 .contactInputs{
@@ -1368,10 +1381,8 @@ header{
 
     background-color: #a7c5fc;
 
-    font-family: "Bebas Neue", sans-serif;
-
-    
-    font-weight: 400;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
 
 }
 
@@ -1408,8 +1419,35 @@ header{
     font-size: 1.5rem;
 
     letter-spacing: 2px;
+    cursor: pointer;
+
+    transition: all 0.4s;
 }
 
+
+.contactPage-submit:hover{
+    letter-spacing: 15px;
+}
+
+.contactPage-submit:active{
+    background-color:  rgb(247, 158, 94);
+}
+
+
+.legalWarning{
+    font-family: "Inter", sans-serif;
+    color: rgb(0, 0, 0);
+    font-size: 0.8rem;
+    margin-top: 5px;
+}
+
+.legalWarning span{
+    text-decoration: underline;
+}
+
+.legalWarning a{
+    color: black;
+}
 
 
 
@@ -2446,4 +2484,6 @@ footer{
     background-color: black;
     outline: none;
     border: none;
+
+    cursor: pointer;
 }
