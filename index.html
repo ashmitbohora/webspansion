@@ -41,8 +41,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
-<body> 
-
+<body class="mainBody">
+    <a href="#header"> 
+        <button class="backToTop">
+            <i class="fa-solid fa-up-long"></i>
+        </button>
+    </a>
     <header id="header">
         <nav class="navDesktop">
             <div class="nav-left">
@@ -68,11 +72,13 @@
             </div>
         </nav>
         <nav class="navMobile navHidden">
-            <a href=""><button>Get Started!</button></a>
-            <a href=""><button>Learn More</button></a>
-            <a href=""><button>Blogs (coming soon) </button></a>
-            <a href=""><button>Testimonials</button></a>
-            <i class="fa-solid fa-xmark navIcons"></i>
+            <div class="navMobileLinks">
+                <a href="#contactPage" class="mobileLinks" ><button>Get Started!</button></a>
+                <a href="#learnMore" class="mobileLinks" ><button>Learn More</button></a>
+                <a href="" class="mobileLinks" ><button>Blogs (coming soon) </button></a>
+                <a href="" class="mobileLinks" ><button>Testimonials</button></a>
+                <i class="fa-solid fa-xmark navIcons"></i>
+            </div>
         </nav>
     </header>
 
@@ -80,7 +86,7 @@
 
 
         <section class="page-1">
-            <img class="mainImage" src="Images/tiltedImagePhotoshop.png" alt="">
+            <img class="mainImage" src="Images/mainPageImage.png" alt="">
             <div class="page-1-right">
                 <div class="page-1-headers">
                     <h1>GET ONLINE, <br> GET NOTICED</h1>
@@ -98,7 +104,7 @@
             </div>
         </section>
         <section class="page-1-mobile">
-            <img src="Images/tiltedImagePhotoshop.png" class="mobileMainImage" alt="">
+            <img src="Images/mainPageImage.png" class="mobileMainImage" alt="">
             <div class="mobileMainText">
                 <h1>Get Online, Get Noticed</h1>
                 <h6>100% Free<span>, No catch, no hidden fess</span></h6>

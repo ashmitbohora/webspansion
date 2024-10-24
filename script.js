@@ -57,6 +57,8 @@ const hamburger = document.querySelector(".fa-bars");
 const xIcon = document.querySelector(".fa-xmark");
 const mobileNav = document.querySelector(".navMobile");
 
+const mobileLinks = document.querySelectorAll(".mobileLinks")
+
 hamburger.addEventListener("click",() => {
 
     mobileNav.classList.toggle("navActive")
@@ -69,6 +71,15 @@ xIcon.addEventListener("click",() => {
     mobileNav.classList.toggle("navActive")
     mobileNav.classList.toggle("navHidden")
 
+});
+
+mobileLinks.forEach(a => {
+    a.addEventListener("click", () => {
+
+        mobileNav.classList.toggle("navActive");
+        mobileNav.classList.toggle("navHidden");
+
+    });
 });
 
 
@@ -119,3 +130,23 @@ closeShare.addEventListener("click", () => {
 
 });
 
+
+
+
+
+// Back to Top 
+
+
+const backToTop = document.querySelector(".backToTop");
+
+
+window.addEventListener("scroll",() => {
+
+    if (window.scrollY > 100){
+        backToTop.classList.add("backToTopActive");
+    }
+    else{
+        backToTop.classList.remove("backToTopActive");
+    }
+
+});
