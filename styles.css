@@ -87,6 +87,7 @@ a {
 
 
 
+
 .custom-shape-divider-top-1728793802 {
     position: absolute;
     top: 0;
@@ -210,7 +211,7 @@ header{
     justify-content: center;
 
 
-    text-shadow: 2px 2px 3px rgba(0,0,0,0.4);
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.4);
 
 
     border: none;
@@ -685,9 +686,6 @@ header{
     font-size: 3rem;
 
     color: white;
-
-    text-shadow: 0px 4px 3px rgba(0,0,0,0.8);
-
 }
 
 
@@ -1594,6 +1592,63 @@ footer{
 
 
 
+/* PRIVACY POLICY */
+
+.legalTermsBody{
+    all: unset;
+    background-image: none;
+}
+.legalText{
+    width: 45%;
+    margin: 120px auto;
+
+    font-family: "Inter", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: start;
+
+
+
+    text-align: left;
+}
+
+.legalText h1{
+    font-size: 3rem;
+    text-align: center;
+    align-self: center;
+}
+
+.legalText h2{
+    margin: 30px 0px;
+}
+
+.effectiveDate{
+    align-self: center;
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin: 15px 0px 50px 0px;
+}
+
+.legalText ul li{
+    margin-left: 20px;
+}
+
+.legalText .button{
+    font-size: 1.5rem;
+    border-radius: 10px;
+    margin-top: 50px;
+
+    background-color: black;
+    outline: none;
+    border: none;
+
+    cursor: pointer;
+}
+
+
+
+
 
 
 
@@ -1800,6 +1855,13 @@ footer{
     
     }
 
+
+
+
+    .legalText{
+        width: 80%;
+        margin: 40px auto;
+    }
  
 
 }
@@ -2333,6 +2395,15 @@ footer{
         letter-spacing: 10%;
     }
 
+
+
+
+    .legalText h1{
+        font-size: 2rem;
+    }
+    .effectiveDate{
+        font-size: 1rem;
+    }
 }
 
 
@@ -2432,58 +2503,3 @@ footer{
 
 
 
-
-
-/* PRIVACY POLICY */
-
-.legalTermsBody{
-    all: unset;
-    background-image: none;
-}
-.legalText{
-    width: 45%;
-    margin: 120px auto;
-
-    font-family: "Inter", sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: start;
-
-
-
-    text-align: left;
-}
-
-.legalText h1{
-    font-size: 3rem;
-    text-align: center;
-    align-self: center;
-}
-
-.legalText h2{
-    margin: 30px 0px;
-}
-
-.effectiveDate{
-    align-self: center;
-    font-size: 1.2rem;
-    font-weight: 400;
-    margin: 15px 0px 50px 0px;
-}
-
-.legalText ul li{
-    margin-left: 20px;
-}
-
-.legalText .button{
-    font-size: 1.5rem;
-    border-radius: 10px;
-    margin-top: 50px;
-
-    background-color: black;
-    outline: none;
-    border: none;
-
-    cursor: pointer;
-}
