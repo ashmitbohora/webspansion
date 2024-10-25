@@ -1728,6 +1728,11 @@ footer{
     font-size: clamp(1rem, 1.6vw, 1.6vw);
 
     width: auto;
+
+    cursor: pointer;
+
+
+    font-family: "Inter", sans-serif;
 }
 
 
