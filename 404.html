@@ -7,18 +7,18 @@
 
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="Body404">
     <header id="header">
         <nav class="navDesktop">
             <div class="nav-left">
-                <img src="Images/Group 70.png" class="navImage" alt="Webspansion Logo">
+                <a href="index.html"><img src="Images/Group 70.png" class="navImage" alt="Webspansion Logo"></a>
             </div>
             <div class="navBars">
                 <i class="fa-solid fa-bars navIcons hamburger"></i>
             </div>
             <div class="nav-right">
-                <a href="#learnMore"> <button class="moreBtn">Learn More</button> 
-                <a href="#contactPage"> 
+                <a href="index.html#learnMore"> <button class="moreBtn">Learn More</button> 
+                <a href="index.html#contactPage"> 
                     <button class="startBtn buttonType1">
                         <span><svg id='Arrow_24' width='24' height='24' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><rect width='24' height='24' stroke='none' opacity='0'/>
                             <g transform="matrix(0.77 0 0 0.77 12 12)" >
@@ -33,15 +33,27 @@
             </div>
         </nav>
         <nav class="navMobile navHidden">
-            <a href=""><button>Get Started!</button></a>
-            <a href=""><button>Learn More</button></a>
-            <i class="fa-solid fa-xmark navIcons"></i>
+            <div class="navMobileLinks">
+                <a href="#contactPage" class="mobileLinks" ><button>Get Started!</button></a>
+                <a href="#learnMore" class="mobileLinks" ><button>Learn More</button></a>
+                <a href="" class="mobileLinks" ><button>Blogs (coming soon) </button></a>
+                <a href="" class="mobileLinks" ><button>Testimonials</button></a>
+                <i class="fa-solid fa-xmark navIcons"></i>
+            </div>
         </nav>
     </header>
-    <main>
-        <h1>
-            Looks like you ran into a picke!
-        </h1>
+    <main class="main404">
+        <img src="Images/pickleImage.png" alt="">
+        <div class="main404Div">
+            <h1>404</h1>
+            <h2>
+                Looks like you ran into a pickle!
+            </h2>
+            <h5>Don't worry! The link doesn't seem to be right. Go back to the homepage by clicking the button below. Thank you!</h5>
+            <button>
+                Back to Home!
+            </button>    
+        </div>
 
     </main>
 
