@@ -55,30 +55,16 @@ a {
 
 .dividor-container{
     position: relative;
-    margin-bottom: -5px;
+    margin-bottom: -15px;
 }
 
 
 .dividor-main{
     width: 100vw;
-    height: 50px;
+    height: 65px;
     background-color: rgba(0, 0, 0, 1);
-    border-radius: 100% 100% 100% 100% / 100% 100% 0% 0%;
-
-
-    
+    border-radius: 100% 100% 100% 100% / 100% 100% 0% 0%;    
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -337,7 +323,16 @@ header{
     max-width: 500px;
 
     filter: drop-shadow(5px 10px 10px rgba(0, 0, 0, 0.5));
+
+    transform: perspective(1000px) rotateY(30deg) rotateX(10deg);
+    transition: all 0.5s;
 }
+
+.mainImage:hover{
+    transform: none;
+}
+
+
 .page-1-right{
     display: flex;
     flex-direction: column;

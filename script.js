@@ -150,3 +150,41 @@ window.addEventListener("scroll",() => {
     }
 
 });
+
+
+
+
+// Mouse Movement Tool
+
+
+document.addEventListener("DOMContentLoaded", () =>{
+
+    const image = document.querySelector(".mainImage")
+
+    image.addEventListener("mousemove", (e) => {
+    
+        const { width, height, left, top } = image.getBoundingClientRect();
+        
+
+        const xMove = e.clientX - (left + width / 2);
+        const yMove = e.clientY - (top + height / 2);
+
+
+        let rotateY = (xMove/ width) * 35;
+        let rotateX = -(yMove/ height) * 35;
+
+
+        image.style.transform = `perspective(1000px) rotateY(${rotateY}deg) rotateX(${rotateX}deg)`;   
+
+    });
+    
+    image.addEventListener("mouseleave", () => {
+    
+        image.style.transform = "";
+    
+    });
+
+
+
+});
+
