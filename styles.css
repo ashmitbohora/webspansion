@@ -17,7 +17,12 @@
 
 a {
     text-decoration: none;
+    width: fit-content;
+
+    color: inherit;
+    display: auto;
 }
+
 
 
 .backToTop{
@@ -48,6 +53,17 @@ a {
 .backToTopActive{
     opacity: 1;
 
+}
+
+
+
+
+.backToTop:hover{
+    background-color: var(--orange);
+}
+
+.backToTop:active{
+    background-color: rgb(200,90,9);
 }
 
 
@@ -1783,10 +1799,6 @@ footer{
 
 
 
-
-
-
-
 @media screen and (min-width: 1441px){
 
 
@@ -1971,12 +1983,7 @@ footer{
         min-width: 100vw;
 
         background-color: var(--blue2);
-
-
         z-index: 999;
-
-
-
 
         transition: all 1s;
 
@@ -2022,6 +2029,9 @@ footer{
 
 
         text-align: left;
+
+        border-radius: 10px;
+
     }
 
     .nav-right{
@@ -2074,6 +2084,17 @@ footer{
     }
 
 
+    .page-1-mobile a{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        margin: 0 auto;
+
+    }
+
+
     .page-1-mobile button{
         display: inline-flex;
         flex-direction: row;
@@ -2103,6 +2124,9 @@ footer{
         position: relative;
     }
 
+
+
+
     .page-1-mobile .button2{
         padding: 2% 5%;
     }
@@ -2110,8 +2134,9 @@ footer{
     .page-1-mobile .button1{
         margin-top: 10px;
         margin-bottom: 10px;
-        
     }
+
+
 
     .button1 span{
         font-size: 2rem;
@@ -2578,6 +2603,35 @@ footer{
 
 
 
+
+
+
+button{
+    background-color: var(--orange);
+    transition: all 0.2s;
+}
+
+button:hover{
+    background-color: rgb(224,100,10);
+}
+
+button:active{
+    background-color: rgb(200,90,9);
+}
+
+
+.main404 button{
+    background-color: var(--orange);
+    transition: all 0.2s;
+}
+
+.main404 button:hover{
+    background-color: rgb(224,100,10);
+}
+
+.main404 button:active{
+    background-color: rgb(200,90,9);
+}
 
 
 
