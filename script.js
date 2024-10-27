@@ -212,6 +212,30 @@ const observerBlocks = new IntersectionObserver ((entries) => {
 
 });
 
+
 // Start observing the learnMore element
 observerBlocks.observe(learnMore);
+
+
+
+
+const page6 = document.querySelector(".page-6")
+const blogs = document.querySelectorAll(".blogsContainer")
+const page6header = document.querySelector(".page6h2")
+
+
+const observeBlogs = new IntersectionObserver((entries) => {
+
+    entries.forEach(entry => {
+        if (entry.isIntersecting){
+            blogs.forEach(blog => {
+                blog.classList.add("active");
+            });
+            page6header.classList.add("active");
+            observeBlogs.unobserve(page6);
+        }
+    });
+});
+
+observeBlogs.observe(page6);
 

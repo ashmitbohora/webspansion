@@ -1314,6 +1314,17 @@ header{
 
 }
 
+
+.blogsContainer.active{
+    animation: fadeInElement 1s linear;
+}
+
+.page6h2.active{
+    animation: fadeInElement 1s linear;
+}
+
+
+
 .page6Img{
     position: absolute;
     bottom: 0;
