@@ -4,6 +4,131 @@
     box-sizing: border-box;
 }
 
+
+
+
+
+@keyframes fadeInElement{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes spinElement{
+    0%{
+        
+    }
+    100%{
+        transform: rotate(360deg);
+        border-radius: 50%;
+    }
+}
+
+@keyframes rotateElement{
+    0%{
+        rotate: 360deg;
+    }
+
+    100%{
+        rotate: 0deg;
+    }
+}
+
+@keyframes bounceEffectArrow{
+    0%{
+        rotate: 40deg;
+    }
+
+    100%{
+        rotate: 0deg;
+    }
+}
+
+
+@keyframes slideRight{
+    0%{
+        transform: translateX(-300px) perspective(1000px) rotateY(0deg) rotateX(0deg);
+        scale: 1.2;
+    }
+    50%{
+        scale: 1;
+    }
+    100%{
+        transform: translateX(0) perspective(1000px) rotateY(30deg) rotateX(10deg);
+
+    }
+}
+
+
+@keyframes slideLeft{
+    0%{
+        transform: translateX(300px);
+    }
+    
+    100%{
+        transform: translateX(0px);
+    }
+}
+
+
+
+
+@keyframes boxLeft{
+    0%{
+        transform: translateX(-300px);
+    }
+
+    100%{
+        transform: translateX(0px);
+    }
+}
+
+@keyframes boxRight{
+    0%{
+        transform: translateX(300px);
+    }
+
+    100%{
+        transform: translateX(0px);
+    }
+}
+
+@keyframes slideDown{
+    0%{
+        transform: translateY(-50px);
+    }
+    100%{
+        transform: translateY(0px);
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 :root{
     --blue: #146ef5;
     --orange: rgb(249,111,11);
@@ -333,6 +458,8 @@ header{
     margin: 0 auto;
 
     padding: 50px 0px 100px 0px;
+
+    
 }
 .mainImage{
     width: clamp(280px, 40%, 40%);
@@ -342,6 +469,9 @@ header{
 
     transform: perspective(1000px) rotateY(30deg) rotateX(10deg);
     transition: all 0.2s;
+
+
+    animation: slideRight 0.8s linear;
 }
 
 .mainImage:hover{
@@ -356,6 +486,7 @@ header{
     justify-content: center;
 
     text-align: right;
+    animation: slideLeft 0.8s linear;
 }
 
 .page-1-headers{
@@ -411,7 +542,6 @@ header{
 
 
 
-
 .page-1-headers h6{
     font-size: 1.5rem;
     font-family: "Inter", sans-serif;
@@ -420,6 +550,12 @@ header{
     font-weight: 450;
     letter-spacing: 0;
     line-height: 1.4;
+    opacity: 0;
+
+
+    animation: fadeInElement 1s linear;
+    animation-delay: 0.8s;
+    animation-fill-mode: forwards;
 }
 
 
@@ -437,7 +573,12 @@ header{
 
     transform: rotate(-15deg);
 
+    animation-name: rotateElement;
+    animation-duration: 0.8s;
+
 }
+
+
 
 
 
@@ -561,6 +702,13 @@ header{
 
 }
 
+
+
+
+
+
+
+
 .learnMore h2{
     text-align: center;
     font-size: 5rem;
@@ -576,6 +724,7 @@ header{
     padding: 50px;
 
     letter-spacing: 2.2px;
+
     
 }
 
@@ -628,6 +777,7 @@ header{
 .imgRight img{
     width: 200px;
 }
+
 
 
 
@@ -830,7 +980,17 @@ header{
 
 
 
+.learnMore-1.active, .learnMore-3.active{
+    animation: boxLeft 2s;
+}
+    
+.learnMore-2.active, .learnMore-4.active{
+    animation: boxRight 2s;
+}
 
+.reallyFree.active{
+    animation: slideDown 2s;
+}
 
 
 

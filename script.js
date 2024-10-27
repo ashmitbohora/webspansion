@@ -188,3 +188,30 @@ document.addEventListener("DOMContentLoaded", () =>{
 
 });
 
+
+
+
+// Add Intrersection Observer to the learn more blocks
+
+
+const learnMore = document.querySelector(".learnMore")
+const blocks = document.querySelectorAll(".learnMoreBlocks")
+const reallyFree = document.querySelector(".reallyFree")
+
+const observerBlocks = new IntersectionObserver ((entries) => {
+
+    entries.forEach(entry => {
+        if (entry.isIntersecting){
+            blocks.forEach(block => {
+                block.classList.add("active");
+            });
+            reallyFree.classList.add("active");
+            observerBlocks.unobserve(learnMore);
+        }
+    });
+
+});
+
+// Start observing the learnMore element
+observerBlocks.observe(learnMore);
+
