@@ -2123,17 +2123,21 @@ footer{
     }
 
 
-
-    .learnMore-1.active, .learnMore-3.active{
-        animation: fadeInElement 2s;
+    .learnMore-1.active{
+        animation: none;
+    }
+    .learnMore-3.active{
+        animation: fadeInElement 1s;
     }
         
     .learnMore-2.active, .learnMore-4.active{
-        animation: fadeInElement 2s;
+        animation: fadeInElement 1s;
+        animation-delay: 0.3s;
     }
     
     .reallyFree.active{
-        animation: fadeInElement 2s;
+        animation: fadeInElement 1s;
+        animation-delay: 0.6s;
     }
 
     
