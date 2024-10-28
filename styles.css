@@ -2124,6 +2124,20 @@ footer{
 
 
 
+    .learnMore-1.active, .learnMore-3.active{
+        animation: fadeInElement 2s;
+    }
+        
+    .learnMore-2.active, .learnMore-4.active{
+        animation: fadeInElement 2s;
+    }
+    
+    .reallyFree.active{
+        animation: fadeInElement 2s;
+    }
+
+    
+
 
     .legalText{
         width: 80%;
