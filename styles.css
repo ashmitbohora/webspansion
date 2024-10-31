@@ -996,11 +996,16 @@ header{
 
 
 
-.contactPage.active{
-    animation: fadeInElement 1s linear;
+
+
+.contactPage-background.active{
+    animation: fadeInElement 0.5s linear;
 }
 
+.contactPage-inner.active{
+    animation: fadeInElement 0.5s linear;
 
+}
 
 
 
