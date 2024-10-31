@@ -996,153 +996,9 @@ header{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Testimonials page */
-
-
-.page-4{
-    background-color: #FFB88C;
-
-
-
-    width: 100vw;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-
-    margin-bottom: -20px;
-
-
-    overflow-x: hidden;
-
-
-    padding-bottom: 100px;
-
-
-
+.contactPage.active{
+    animation: fadeInElement 1s linear;
 }
-
-.page-4 h2{
-    font-size: 3rem;
-    padding: 50px;
-
-    color: white;
-    letter-spacing: 2.2px;
-}
-
-.testimonalsContainer{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    flex: 1;
-
-    flex-wrap: wrap;
-
-    gap: 50px;
-}
-
-.testimonial{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-
-.testimonial iframe{
-    height: 600px;
-    width: 400px;
-    
-
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-
-    background-color: gray;
-}
-.testimonialBottom{
-    background-color: white;
-    width: 400px;
-    padding: 20px;
-    padding-bottom: 40px;
-    border-bottom-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    gap: 10px;
-
-    position: relative;
-}
-
-.testimonialProfilePicture{
-    background-color: gray;
-    border-radius: 50%;
-    height: 50px;
-    width: 50px;
-}
-
-.testimonialBottom img{
-    width: 30%;
-    height: auto;
-
-    margin-bottom: 10px;
-}
-
-
-.testimonialMessage{
-    font-family: "Inter", sans-serif;
-    width: 90%;
-
-    font-size: 1.2rem;
-}
-
-.testimonialMore{
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
-
-    color: var(--blue);
-    text-decoration: underline;
-
-    transition: all 0.4s;
-}
-
-.testimonialMore:hover{
-    color: var(--orange);
-}
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -2190,6 +2046,14 @@ footer{
         gap: 20px;
 
         padding-top: 200px;
+
+    }
+    .navMobileImage{
+        position: absolute;
+        top: 10%;
+        background-color: white;
+        padding: 10px;
+        border-radius: 10px;
     }
 
     .navMobile a{
@@ -2220,6 +2084,9 @@ footer{
         text-align: left;
 
         border-radius: 10px;
+
+        
+        font-family: "Bebas Neue", sans-serif;
 
     }
 

@@ -239,3 +239,28 @@ const observeBlogs = new IntersectionObserver((entries) => {
 
 observeBlogs.observe(page6);
 
+
+
+
+
+const contactPage = document.querySelector(".contactPage")
+const contactPageImage = document.querySelectorAll(".contactPage-background")
+const contatPageInner = document.querySelector(".contactPage-inner")
+
+
+const observeContact = new IntersectionObserver((entries) => {
+
+    entries.forEach(entry => {
+        if (entry.isIntersecting){
+            contactPage.classList.add("active");
+            contactPageInner.classList.add("active");
+            
+            observeBlogs.unobserve(page6);
+        }
+    });
+});
+
+observeContact.observe(contactPage);
+
+
+
