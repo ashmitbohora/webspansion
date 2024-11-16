@@ -1258,6 +1258,7 @@ header{
 
 .blogBottom p{
     font-family: "Inter", sans-serif;
+    font-weight: 500;
 }
 .blog button{
     position: absolute;
