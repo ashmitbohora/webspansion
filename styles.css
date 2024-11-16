@@ -1248,6 +1248,17 @@ header{
 
     position: relative;
 }
+
+.blogBottom h4{
+    letter-spacing: 1.2px;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+
+.blogBottom p{
+    font-family: "Inter", sans-serif;
+}
 .blog button{
     position: absolute;
     bottom: 10px;
