@@ -1988,17 +1988,15 @@ footer{
         animation: none;
     }
     .learnMore-3.active{
-        animation: fadeInElement 1s;
+        animation: none;
     }
         
     .learnMore-2.active, .learnMore-4.active{
-        animation: fadeInElement 1s;
-        animation-delay: 0.3s;
+        animation: none;
     }
     
     .reallyFree.active{
-        animation: fadeInElement 1s;
-        animation-delay: 0.6s;
+        animation: none;
     }
 
     
