@@ -93,11 +93,6 @@ const closeShare = document.querySelector('.closeShare')
 
 
 
-
-
-
-
-
 shareBtn.addEventListener("click", () => {
 
     if (navigator.share){
@@ -134,6 +129,7 @@ closeShare.addEventListener("click", () => {
 
 
 
+
 // Back to Top 
 
 
@@ -159,9 +155,10 @@ window.addEventListener("scroll",() => {
 
 document.addEventListener("DOMContentLoaded", () =>{
 
-    const image = document.querySelector(".mainImage")
+    const image = document.querySelector(".mainImage");
+    const imageDiv = document.querySelector(".mainImageDiv");
 
-    image.addEventListener("mousemove", (e) => {
+    imageDiv.addEventListener("mousemove", (e) => {
     
         const { width, height, left, top } = image.getBoundingClientRect();
         
@@ -178,7 +175,7 @@ document.addEventListener("DOMContentLoaded", () =>{
 
     });
     
-    image.addEventListener("mouseleave", () => {
+    imageDiv.addEventListener("mouseleave", () => {
     
         image.style.transform = "";
     
@@ -187,6 +184,11 @@ document.addEventListener("DOMContentLoaded", () =>{
 
 
 });
+
+
+
+
+
 
 
 
@@ -211,6 +213,11 @@ const observerBlocks = new IntersectionObserver ((entries) => {
     });
 
 });
+
+
+
+
+
 
 
 // Start observing the learnMore element
@@ -238,7 +245,6 @@ const observeBlogs = new IntersectionObserver((entries) => {
 });
 
 observeBlogs.observe(page6);
-
 
 
 

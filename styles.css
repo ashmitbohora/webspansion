@@ -458,19 +458,26 @@ header{
     margin: 0 auto;
 
     padding: 50px 0px 100px 0px;
-
     
 }
-.mainImage{
-    width: clamp(280px, 40%, 40%);
+.mainImageDiv{
+    width: clamp(300px, 55%, 55%);
     max-width: 500px;
+    aspect-ratio: 1.1 / 1;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: visible;
+    transform: scale(1.125);
 
-    filter: drop-shadow(5px 10px 10px rgba(0, 0, 0, 0.5));
+}
 
+.mainImage{
+    width: 80%;
     transform: perspective(1000px) rotateY(30deg) rotateX(10deg);
     transition: all 0.2s;
-
-
+    filter: drop-shadow(5px 10px 10px rgba(0, 0, 0, 0.5));
     animation: slideRight 0.8s linear;
 }
 
@@ -491,6 +498,11 @@ header{
 
 .page-1-headers{
     gap: 8px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
 }
 
 .page-1-headers h1{
@@ -556,19 +568,28 @@ header{
     animation: fadeInElement 1s linear;
     animation-delay: 0.8s;
     animation-fill-mode: forwards;
+
+    margin-top: -15px;
+
+
 }
 
 
-.page-1-headers h6 span{
+
+
+.orangeH6{
     color: var(--orange);
 }
-
-
+.soloH6{
+    font-size: 1.1rem;
+    letter-spacing: 0.5;
+    
+}
 
 .arrowMain{
     position: absolute;
     width: 30%;
-    bottom: -90%;
+    bottom: -50%;
     left: -25%;
 
     transform: rotate(-15deg);
@@ -1119,7 +1140,8 @@ header{
 
 .answer.active{
 
-    max-height: 300px;
+    max-height: fit-content;
+    width: 95%;
 
 }
 
@@ -2013,6 +2035,17 @@ footer{
 
     
 
+    .questions-container{
+        width: 80%;
+    }
+    .showAnswer{
+        padding: 10px;
+    }
+    
+
+
+
+
 
     .legalText{
         width: 80%;
@@ -2494,10 +2527,9 @@ footer{
 
 
     .page-1-mobile button{
-        width: clamp(230px,250px,250px);
+        width: 80vw;
+        min-width: none;
     }
-
-
 
 
     .trackerCircle h5{
