@@ -1737,6 +1737,11 @@ footer{
 /* 404 page */
 
 
+.Body404{
+    background-color: #E6F0FF;
+}
+
+
 .main404{
     width: 80%;
     margin: 0 auto;
@@ -1819,23 +1824,170 @@ footer{
 
 
 
+/* MEET THE CREATOR PAGE */
+
+.meetCreatorBody header{
+    background-color: #E6F0FF;
+}
+
+
+.meetCreatorBody{
+    background-color: #FFD8A8;
+}
+
+.meetCreatorPage{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 90%;
+    margin: 0 auto;
+
+    
+    font-family: "Inter", sans-serif;
+
+    padding: 20px;
+
+}
+
+.creatorImage{
+    height: 300px;
+}
+
+.meetCreatorPage .top{
+    align-self: center;
+    text-align: center;
+
+    padding: 30px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.meetCreatorrPage .top h1{
+    font-size: 2rem;
+
+}
+
+.meetCreatorPage .bottom{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+    gap: 25px;
+}
+
+.meetCreatorPage .bottom h3{
+    padding: 20px 0 10px 0;
+    font-size: 1.8rem;
+    color: rgb(0, 86, 179);
+
+    border-bottom: 2px solid rgba(0, 87, 179, 0.2);
+    width: fit-content;
+}
+
+
+.meetCreatorPage .bottom p{
+    line-height: 1.6;
+    font-size: 1.05rem;
+    padding: 10px 0;
+    
+}
+
+
+.sectionText{
+    padding-bottom: 25px;
+    border-bottom: 2px dashed rgba(0,0,0,0.1);
+}
+
+.sectionText i{
+    padding-right: 10px;
+    transition: all 0.3s; 
+}
+
+
+h3:hover i {
+    color: #FF5722; 
+    transform: scale(1.05); 
+
+}
 
 
 
 
+.joinButton, .joinButtonMore{
+    all: unset;
+
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: var(--orange);
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+
+    text-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+
+    cursor: pointer;
+
+}
+
+.joinButtonMore{
+    display: none;
+}
 
 
 
 
+.section5-text{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+
+
+}
+
+.section5-text .left{
+    width: 80%;
+}
+
+.section5-text .trackerRight{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 20px;
+
+    padding: 20px;
+}
+
+.section5-text .trackerRight h4{
+    font-size: 1.2rem;
+    color: rgb(0, 86, 179);
+}
 
 
 
 
+.ashmitLink{
+    font-weight: 600;
+    position: relative;
+}
 
 
+.ashmitLink::after{
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: var(--blueDarker);
+    position: absolute;
 
-
-
+    bottom: 1px;
+    left: 0;
+}
 
 
 
@@ -1980,6 +2132,8 @@ footer{
         flex-direction: row-reverse;
         gap: 50px;
     }
+
+    
 
     .textLeft{
         gap: 30px;
@@ -2428,6 +2582,26 @@ footer{
         flex-direction: column;
     }
 
+
+
+
+
+
+
+
+
+    .section5-text{
+        flex-direction: column;
+    }
+
+    .section5-text 
+    .joinButton{
+        display: none;
+    }
+
+    .joinButtonMore{
+        display: block;
+    }
 }
 
 
@@ -2445,6 +2619,12 @@ footer{
         width: 150px;
         height: 150px;
     }
+
+    .section5-text .trackerRight .trackerCircle{
+        width: 200px;
+        height: 200px;
+    }
+
 
     .imgRight img{
         width: 150px;
